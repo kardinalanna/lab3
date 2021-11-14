@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host"
+    app:startDestination="@id/First">
+    <fragment
+        android:id="@+id/First"
+        android:name="com.example.lab3_5.First"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_First_to_Second"
+            app:destination="@id/Second" />
+        <action
+            android:id="@+id/action_First_to_activityAbout"
+            app:destination="@id/activityAbout" />
+    </fragment>
+    <fragment
+        android:id="@+id/Second"
+        android:name="com.example.lab3_5.Second"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_Second_to_Third"
+            app:destination="@id/Third" />
+        <action
+            android:id="@+id/action_Second_to_First"
+            app:destination="@id/First" />
+        <action
+            android:id="@+id/action_Second_to_activityAbout"
+            app:destination="@id/activityAbout" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/Third"
+        android:name="com.example.lab3_5.Third"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_Third_to_Second"
+            app:destination="@id/Second" />
+        <action
+            android:id="@+id/action_Third_to_First"
+            app:destination="@id/First" />
+        <action
+            android:id="@+id/action_Third_to_activityAbout"
+            app:destination="@id/activityAbout" />
+    </fragment>
+    <activity
+        android:id="@+id/activityAbout"
+        android:name="com.example.lab3_5.ActivityAbout"
+        android:label="activity_about"
+        tools:layout="@layout/activity_about" />
+
+</navigation>
