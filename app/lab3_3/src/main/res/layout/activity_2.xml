@@ -4,19 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity2">
+    tools:context=".Activity2"
+    android:id="@+id/fragment2">
+
     <TextView
         android:id="@+id/textA2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Activity2"
-        android:textSize="24dp"
+        android:textSize="24sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_a2_to_a3"
+        android:id="@+id/bnToThird"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:text="To Activity3"
@@ -26,13 +28,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_a2_to_a1"
+        android:id="@+id/bnToFirst"
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:text="To Activity1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_a2_to_a3" />
+        app:layout_constraintTop_toBottomOf="@+id/bnToThird" />
 
 
 

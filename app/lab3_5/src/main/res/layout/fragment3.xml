@@ -4,37 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Third"
-    android:id="@+id/Second">
-
+    android:id="@+id/fragment3">
 
     <TextView
-        android:id="@+id/textA2"
+        android:id="@+id/textA3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Second"
+        android:text="Third"
         android:textSize="24dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_a2_to_a3"
+        android:id="@+id/bnToFirst"
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:text="To Third"
+        android:text="To First"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_a2_to_a1"
+        android:id="@+id/bnToSecond"
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:text="To First"
+        android:text="To Second"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_a2_to_a3"
-       />
+        app:layout_constraintTop_toBottomOf="@+id/bnToFirst" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

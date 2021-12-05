@@ -7,13 +7,8 @@ import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.widget.Button
-import android.app.Activity
 import androidx.activity.result.ActivityResult
-import androidx.activity.result.ActivityResultCallback
 
-import androidx.activity.result.contract.ActivityResultContracts
-
-import androidx.activity.result.ActivityResultLauncher
 import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
 import java.lang.String
 
@@ -28,13 +23,13 @@ class Activity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_2)
 
-        val buttonNext: Button = findViewById(R.id.btn_a2_to_a3)
+        val buttonNext: Button = findViewById(R.id.bnToThird)
         val intent = Intent(this, Activity3::class.java)
         buttonNext.setOnClickListener {
             mStartForResult.launch(intent)
         }
 
-        val buttonBack: Button = findViewById(R.id.btn_a2_to_a1)
+        val buttonBack: Button = findViewById(R.id.bnToFirst)
         buttonBack.setOnClickListener {
             finish()
         }
@@ -50,7 +45,7 @@ class Activity2 : AppCompatActivity() {
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater: MenuInflater = menuInflater
-        inflater.inflate(R.menu.menu, menu)
+        inflater.inflate(R.menu.bottom_nav_menu, menu)
         return true
     }
 

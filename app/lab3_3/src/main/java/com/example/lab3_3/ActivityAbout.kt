@@ -11,29 +11,8 @@ import com.example.lab3_3.databinding.ActivityAboutBinding
 
 class ActivityAbout : AppCompatActivity() {
 
-  //  private lateinit var appBarConfiguration: AppBarConfiguration
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        val binding:ActivityAboutBinding  = ActivityAboutBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-
-//     setSupportActionBar(binding.toolbar)
-
-       /* val navController = findNavController(R.id.nav_host_fragment_content_activity_about)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
-        setupActionBarWithNavController(navController, appBarConfiguration)*/
-
-       /* binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }*/
+        setContentView(R.layout.activity_about)
     }
-
-/*    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_activity_about)
-        return navController.navigateUp(appBarConfiguration)
-                || super.onSupportNavigateUp()
-    }*/
 }
